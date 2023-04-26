@@ -1,0 +1,20 @@
+package org.battleship;
+
+import java.io.IOException;
+import java.util.Properties;
+
+public abstract class BasicSettings extends AbstractSettings {
+    protected final Properties properties = new Properties();
+
+    public BasicSettings() {
+        try {
+            properties.load(getClass().getClassLoader().getResourceAsStream("program.properties"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String getVersion() {
+        return this.properties.getProperty("version");
+    }
+}
