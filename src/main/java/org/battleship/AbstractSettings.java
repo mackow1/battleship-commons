@@ -11,8 +11,6 @@ import java.nio.file.Files;
 public abstract class AbstractSettings implements Path {
     protected String filePath = "";
 
-    public static final String DEFAULT_FILE_PATH = System.getProperty("user.home") + "/battleship_server_settings.json";
-
     public void read(String filePath) throws IOException {
         ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         mapper.readerForUpdating(this).readValue(Paths.get(filePath).toFile());
