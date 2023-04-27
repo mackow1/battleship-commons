@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.Files;
 
-public abstract class AbstractSettings implements Path {
+public abstract class AbstractSettings {
     protected String filePath = "";
 
     public void read(String filePath) throws IOException {
