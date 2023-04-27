@@ -3,7 +3,7 @@ package org.battleship;
 import java.io.IOException;
 import java.util.Properties;
 
-public abstract class BasicSettings extends AbstractSettings {
+public class BasicSettings extends AbstractSettings {
     protected final Properties properties = new Properties();
 
     public BasicSettings() {
