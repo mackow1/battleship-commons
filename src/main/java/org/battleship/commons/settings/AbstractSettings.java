@@ -1,4 +1,4 @@
-package org.battleship;
+package org.battleship.commons.settings;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.DeserializationFeature;

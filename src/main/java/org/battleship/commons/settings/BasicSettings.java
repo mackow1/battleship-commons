@@ -1,4 +1,6 @@
-package org.battleship;
+package org.battleship.commons.settings;
+
+import org.battleship.commons.settings.AbstractSettings;
 
 import java.io.IOException;
 import java.util.Properties;
